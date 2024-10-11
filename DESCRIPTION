@@ -1,0 +1,14 @@
+Package: Quill
+Title: Quill Editor HTML Widget for R
+Version: 0.1.0
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: An R package that provides a Quill editor as an HTML widget.
+License: MIT
+Encoding: UTF-8
+Imports:
+  htmlwidgets,
+  htmltools
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
