@@ -23,9 +23,26 @@ HTMLWidgets.widget({
       quill = new Quill('#editor', {
         theme: 'snow',
         modules: {
-          // Equivalent to { toolbar: { container: '#toolbar' }}
-          toolbar: '#toolbar'
-        }
+        toolbar: [
+            [{ "font": [] }, { "size": ["small", false, "large", "huge"] }], // custom dropdown
+
+            ["bold", "italic", "underline", "strike"],
+
+            [{ "color": [] }, { "background": [] }],
+
+            [{ "script": "sub" }, { "script": "super" }],
+
+            [{ "header": 1 }, { "header": 2 }, "blockquote", "code-block"],
+
+            [{ "list": "ordered" }, { "list": "bullet" }, { "indent": "-1" }, { "indent": "+1" }],
+
+            [{ "direction": "rtl" }, { "align": [] }],
+
+            ["link", "image", "video", "formula"],
+
+            ["clean"]
+        ]
+        },
       });
 
       // Add an event listener to send the content to R when it changes
