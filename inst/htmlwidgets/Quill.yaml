@@ -2,6 +2,6 @@
 dependencies:
  - name: quill
    version: 2.0.2
-   src: htmlwidgets/lib/quill-2.0.2
+   src: htmlwidgets/lib/
    script: quill.min.js
    stylesheet: quill.min.css
