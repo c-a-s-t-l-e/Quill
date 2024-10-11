@@ -14,8 +14,7 @@ HTMLWidgets.widget({
       // Create the editor container
       el.innerHTML = `
         <div id="editor">
-          <p>Hello World!</p>
-          <p>Some initial <strong>bold</strong> text</p>
+          <p>Compose your text here.</p>
           <p><br /></p>
         </div>
       `;
