@@ -21,7 +21,11 @@ HTMLWidgets.widget({
 
       // Initialize the Quill editor
       quill = new Quill('#editor', {
-        theme: 'snow'
+        theme: 'snow',
+        modules: {
+          // Equivalent to { toolbar: { container: '#toolbar' }}
+          toolbar: '#toolbar'
+        }
       });
 
       // Add an event listener to send the content to R when it changes
